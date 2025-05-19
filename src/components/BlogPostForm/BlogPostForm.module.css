@@ -1,62 +1,55 @@
 .blogPostForm {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.blogPostForm__input {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.blogPostForm__input:focus {
-  border-color: #007bff;
-  outline: none;
-}
-.blogPostForm__textarea {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.blogPostForm__textarea:focus {
-  border-color: #007bff;
-  outline: none;
-}
-.blogPostForm__button {
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    color: black;
+  }
   
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .formGroup textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+
+.error {
+    color: red;
 }
-.blogPostForm__button:hover {
-  background-color: #0056b3;
-}
-.blogPostForm__error {
-  color: red;
-  font-size: 0.875rem;
-}
-.blogPostForm__success {
-  color: green;
-  font-size: 0.875rem;
-}
-.blogPostForm__loading {
-  color: #007bff;
-  font-size: 0.875rem;
-}
-.blogPostForm__loading::before {
-  content: 'Loading...';
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-.blogPostForm__loading::after {
-  content: '';
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  border: 2px solid #007bff;
-  border-top-color: transparent;
-  animation: spin 1s linear infinite;
-}
+
+button {
+    align-self: flex-start;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #3182ce; /* blue.600 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2b6cb0; /* blue.700 */
+  }
